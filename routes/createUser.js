@@ -1,12 +1,12 @@
 const express = require('express');
 const admin = require('firebase-admin');
 const sgMail = require('../services/sendgrid');
-//const serviceAccount = require('../firebase.json');
+const verificarToken = require('../middlewares/auth');
 require('dotenv').config();
 
 const router = express.Router();
 
-router.post('/createuser', async (req,res)=> {
+router.post('/createuser', verificarToken, async (req,res)=> {
 
     const {id, email, first_name, last_name, is_active} = req.body;
 
