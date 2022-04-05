@@ -1,7 +1,6 @@
 const express = require('express');
 const admin = require('firebase-admin');
 const sgMail = require('../services/sendgrid');
-//const serviceAccount = require('../firebase.json');
 require('dotenv').config();
 
 const router = express.Router();
