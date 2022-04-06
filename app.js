@@ -2,7 +2,7 @@ const express = require ('express');
 const { json } = require('body-parser');
 const { urlencoded } = require('express');
 const createUser = require('./routes/createUser');
-const createUser = require('./routes/createUser');
+const getUsers = require('./routes/getUsers');
 const morgan = require('morgan');
 
 const app = express();
