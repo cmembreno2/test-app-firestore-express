@@ -18,13 +18,10 @@
   "keywords": [],
   "license": "ISC",
   "dependencies": {
-    "@sendgrid/mail": "^7.6.2",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
-    "faker": "^5.5.3",
     "firebase": "^9.6.10",
     "firebase-admin": "^10.0.2",
-    "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
