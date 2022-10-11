@@ -6,7 +6,9 @@ require('dotenv').config();
 const router = express.Router();
 
 router.get('/users', async (req,res)=> {
+
     console.log("Executing Get All Users route...")
+    
     if ( !admin.apps.length ) admin.initializeApp({
         credential: admin.credential.cert(process.env.FIREBASE_KEY)
     });
